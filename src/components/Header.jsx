@@ -1,36 +1,19 @@
 import Link from "next/link";
-import { useCallback, useState } from "react";
-import SocialLinks from "src/components/SocialLinks";
+import { useState } from "react";
 
 function Header() {
   const [text, setText] = useState("");
   return (
-    <div className="relative z-10">
-      <div className="">
-        <SocialLinks />
-      </div>
+    <div className="flex justify-center w-full fixed z-20 h-[200px] top-0 left-0 bg-[url('https://static-mh.content.disney.io/starwars/assets/navigation/navigation_stars@2x-815223a7aade.jpg')]">
       <Link href="/">
-        <a>
+        <a className="">
           <img
+            className="h-[180px] invert brightness-0"
             src="https://download.logo.wine/logo/Star_Wars/Star_Wars-Logo.wine.png"
             alt=""
           />
         </a>
       </Link>
-      <div className="bg-white">
-        <div className="">
-          <input
-            className="border-[2px] border-black"
-            type="text"
-            placeholder="Search Star Wars"
-            onChange={(e) => setText(e.target.value)}
-          />
-          <img
-            src="https://static-mh.content.disney.io/starwars/assets/navigation/icon_search-957a123fdb62.svg"
-            alt=""
-          />
-        </div>
-      </div>
     </div>
   );
 }
