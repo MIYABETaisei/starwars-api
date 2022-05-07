@@ -12,7 +12,7 @@ function Character(props) {
           />
         </a>
       </Link>
-      <Link href={`/id/${props.character.id}.json`}>
+      <Link href={`/id/${props.character.id}`}>
         <a className="text-white font-bold text-2xl block p-3">
           {props.character.name}
         </a>
