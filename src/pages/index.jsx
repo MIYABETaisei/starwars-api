@@ -13,7 +13,7 @@ export default function Characters() {
 
   const handleShowMore = useCallback(() => {
     setValue(value + 12);
-  }, []);
+  }, [value]);
 
   return (
     <div className="bg-starwars-color">
