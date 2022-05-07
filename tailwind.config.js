@@ -6,6 +6,8 @@ module.exports = {
       colors: {
         "starwars-color": "#151515",
         "character-color": "#282727",
+        "headerRight-color": "#343434",
+        "headerAction-color": "#999999",
       },
     },
   },
