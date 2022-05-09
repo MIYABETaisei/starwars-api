@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
         <style>
           @import
-          url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+          url(&apos;https://fonts.googleapis.com/css2?family=Oswald&display=swap&apos;);
         </style>
       </Head>
       <Header />

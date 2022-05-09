@@ -58,8 +58,10 @@ function Character() {
               (data?.diedLocation && "LOCATIONS") ||
               (data?.homeworld && "LOCATIONS")}
           </h4>
-          {locations.filter(updateLocations).map((location) => (
-            <p className="text-sm mt-[5px]">{location !== "" && location}</p>
+          {locations.filter(updateLocations).map((location, index) => (
+            <p className="text-sm mt-[5px]" key={index}>
+              {location !== "" && location}
+            </p>
           ))}
           <h4 className="text-xl mt-[20px]">GENDER</h4>
           <span className="text-sm mt-[5px]">{data?.gender}</span>

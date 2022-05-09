@@ -8,7 +8,7 @@ function HeaderRight() {
       <div className="w-full mt-[10px] text-headerAction-color flex items-center justify-end">
         <LogButton>LOG IN</LogButton>
         <span className="text-[#343434] text-base font-medium tracking-[2px]">
-          //
+          /
         </span>
         <LogButton>LOG OUT</LogButton>
       </div>
